@@ -4,8 +4,4 @@ body {
 h1{
   font-family: 'League Gothic';
 }
-h2{font-family: 'League Gothic', condensed;}
-
-#logo {
-  transform: rotateX(150deg);
-}
+h2{font-family: 'League Gothic';}
