@@ -1,7 +1,19 @@
 
+<<<<<<< Updated upstream
 body {
   background: #000;
   padding-top: 10px;
+=======
+h1{
+font-size: 90px;
+font-family: 'League Gothic', condensed; 
+}
+
+body {
+  background: #000;
+  padding-top: 10px;
+  
+>>>>>>> Stashed changes
 }
 p {
   color: rgb(255, 255, 255);

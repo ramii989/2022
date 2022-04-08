@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'IBM PlexSans';
+  src: url('fonts/IBMPlexSans-Regular.woff') format('woff'), url('fonts/IBMPlexSans-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IBM PlexSans Bold';
+  src: url('fonts/IBMPlexSans-Bold.woff') format('woff'), url('fonts/IBMPlexSans-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+blockquote {
+  background: linear-gradient(45deg, #910089, transparent);
+  color: rgb(255, 255, 255);
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1em;
+  border-radius: 4px;
+}
+
+header{
+  box-sizing: border-box
+  background-color: rgb(255, 255, 255)
+  color: green;
+  padding: 25px;
+
+ }
+
+/* css reset */
+/* Andrew will explain what this is and why you want it next class */
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: rgb(200, 159, 218);
+  background-color: black;
+}
+
+/* add styling here */
+.container {
+  width: 100%;
+  max-width: 48rem;
+  padding: 0 1rem;
+  margin: 10rem auto;
+}
