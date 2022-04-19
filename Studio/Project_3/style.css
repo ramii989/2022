@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+
+}
+
+.book{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    perspective: 1000px;
+}
+.book:hover .cover{
+    transform: rotateX(10deg) rotateY(-180deg);
+}
+.book:hover .page{
+    transform: rotateX(10deg) rotateY(-180deg);
+    z-index: 2;
+}
+.cover{
+    z-index: 1;
+    transition: all 3s;
+}
+.back-cover{
+    z-index: -2;
+}
+
+.cover,
+.back-cover{
+    height: 300px;
+    width: 260px;
+    background: black;
+    border-radius: 2px 20px 20px 2px;
+    position: absolute;
+    box-shadow: 1px 1px 10px #f0f0f5;
+    transform: rotateX(20deg);
+    transform-origin: center left;
+}
+.page,
+.last-page
+{
+    height: 280px;
+    width: 250px;
+    background: white;
+    position: absolute;
+    border-radius: 2px 10px 10px 2px;
+    transform: rotateX(20deg);
+    transform-origin: center left;
+    z-index: -1;
+   }
+.page:nth-child(2)
+{
+    transition-duration: 3s;
+}
+.page:nth-child(3)
+{
+    transition-duration: 2.6s;
+}
+.page:nth-child(4)
+{
+    transition-duration: 2.2s;
+}
+.page:nth-child(5)
+{
+    transition-duration: 1.8s;
+}
+.page:nth-child(6)
+{
+    transition-duration: .4s;
+}
+
+.book:hover .page:nth-child(2){
+    transition-duration: 6s;
+}
+.book:hover .page:nth-child(3){
+    transition-duration: 5.6s;
+}
+.book:hover .page:nth-child(4){
+    transition-duration: 5.2s;
+}
+.book:hover .page:nth-child(5){
+    transition-duration: 4.8s;
+}
+.book:hover .page:nth-child(6){
+    transition-duration: 4.4s;
+}
+
+.center{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+input[type="checkbox"]
+{
+    position: relative;
+    width: 120px;
+    height: 40px;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #333, #000);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 4px #cccbcb, 0 0 0 5px #c2c2c2, inset 0 0 10px
+    rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+
+}
+input[type="checkbox"]:before
+{
+content: '';
+position: absolute;
+top:0;
+left: 0;
+width: 80px;
+height: 40px;
+background: linear-gradient(0deg,#000, #6b6b6b);
+border-radius: 20px;
+box-shadow: 0 0 0 1px #232323;
+transition: scale(.98,.96);
+transition: .5s;
+}
+input:checked[type="checkbox"]:before
+{
+ Left: 40px;    
+}
+
+
